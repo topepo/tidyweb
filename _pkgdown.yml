@@ -5,8 +5,12 @@ home:
     <a class="twitter-timeline" data-chrome="noborders noheader nofooter" data-dnt="true" href="https://twitter.com/hashtag/tidyverse" data-widget-id="791673057060327424"> </a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
+template:
+  package: tidytemplate
+  default_assets: false
+
 navbar:
-  title: tidyverse
+  title: The tidyverse
   type: default
   left: []
   right: []

@@ -1,36 +1,143 @@
-/* Sticker footer */
-body > .container {
-  display: flex;
-  padding-top: 60px;
-  min-height: calc(100vh);
-  flex-direction: column;
+/* Fixes for fixed navbar --------------------------*/
+
+body {
+  position: relative;
+  padding-top: 65px;
 }
 
-body > .container .row {
-  flex: 1;
+.contents h1, .contents h2, .contents h3, .contents h4 {
+  padding-top: 65px;
+  margin-top: -45px;
 }
+
+.page-header {
+  margin-top: 0;
+}
+
+/* Table of contents --------------------------*/
+
+#sidebar {
+  word-wrap: break-word;
+  hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+#sidebar h2 {
+  font-size: 1.6em;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+
+#sidebar .list-unstyled li {
+  margin-bottom: 0.5em;
+  line-height: 1.4;
+}
+
+#sidebar small {
+  color: #777;
+}
+
+
+/* Syntax highlighting ---------------------------------------------------- */
+
+.fl,.number {color:rgb(21,20,181);}
+.fu,.functioncall {color:#264D66 ;}
+.ch,.st,.string {color:#375D81 ;}
+.kw,.keyword {font-weight:600;}
+.argument {color:#264D66 ;}
+.co,.comment {color: #333;}
+.formalargs {color: #264D66;}
+.eqformalargs {color:#264D66;}
+.slot {font-style:italic;}
+.symbol {color:black ;}
+.prompt {color:black ;}
+
+pre img {
+  background-color: #fff;
+  display: block;
+}
+
+/* Status --------------------------- */
+
+.status-container {
+  padding-top:32px;
+}
+
+.status-container  a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* For shrinking navbar ------------------ */
+
+/* For big header
+
+  &-brand {
+    font-family: $font-family-monospace;
+    font-weight: normal;
+    font-size: 48px;
+    padding: 35px 15px;
+
+    padding-left: 84px;
+    background-image:url(../logo.png);
+    background-size: 60px auto;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+
+  }
+*/
+
+
+/* For reference topics listing ------- */
+
+.section {
+  margin-bottom: 24px;
+}
+
+.topic p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.topic ul {
+  padding-top: 0;
+  list-style-type: square;
+}
+
+.topic li a {
+  color: inherit;
+}
+
+/* For the rstudio footer ------- */
 
 footer {
   margin-top: 45px;
   padding: 35px 0 36px;
   border-top: 1px solid #e5e5e5;
-  color: #666;
+
   display: flex;
+  color: #666;
 }
 footer p {
   margin-bottom: 0;
 }
-footer div {
+footer .tidyverse {
   flex: 1;
 }
-footer .pkgdown {
+footer .author {
+  flex: 1;
   text-align: right;
 }
-footer p {
-  margin-bottom: 0;
+
+/* --------------------- darken code link color */
+
+code a {
+  color: #375f84;
+  font-weight: 600;
 }
 
-/* Section anchors ---------------------------------*/
+/* ---------------------- hover anchor tags */
 
 .hasAnchor {
   margin-left: -30px;
@@ -52,59 +159,35 @@ a.anchor {
   visibility: visible;
 }
 
-/* Fixes for fixed navbar --------------------------*/
+/* Tweak appearance of navigation in sidebar ---------------------- */
 
-.contents h1, .contents h2, .contents h3, .contents h4 {
-  padding-top: 60px;
-  margin-top: -60px;
+#sidebar .nav {
+  padding-left: 0px;
+  list-style-type: none;
+  color: #5a9ddb;
 }
 
-/* Sidebar --------------------------*/
-
-#sidebar {
-  margin-top: 30px;
-  word-wrap: break-word;
-
-  hyphens: auto;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-}
-#sidebar h2 {
-  font-size: 1.5em;
-  margin-top: 1em;
+#sidebar .nav > li {
+  padding: 10px 0 0px 20px;
+  display: list-item;
+  line-height: 20px;
+  background-image: url(./tocBullet.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 280px;
+  background-position: left 0px;
 }
 
-#sidebar h2:first-child {
-  margin-top: 0;
+#sidebar .nav > li.active {
+  background-position: left -240px;
 }
 
-#sidebar .list-unstyled li {
-  margin-bottom: 0.5em;
+#sidebar a {
+  padding: 0px;
+  color: #5a9ddb;
+  background-color: transparent;
 }
 
-/* Syntax highlighting ---------------------------------------------------- */
-
-code {
-  background-color: #f7f7f7;
-  color: #333;
-}
-code a {
-  color: #375f84;
-}
-
-.fl,.number {color:rgb(21,20,181);}
-.fu,.functioncall {color:#264D66 ;}
-.ch,.st,.string {color:#375D81 ;}
-.kw,.keyword {color:black;}
-.argument {color:#264D66 ;}
-.co,.comment {color: #777;}
-.formalargs {color: #264D66;}
-.eqformalargs {color:#264D66;}
-.slot {font-style:italic;}
-.symbol {color:black ;}
-.prompt {color:black ;}
-
-pre img {
-  background-color: #fff;
-  display: block;
+#sidebar a:hover {
+  background-color: transparent;
+  text-decoration: underline;
 }
