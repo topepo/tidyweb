@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# the tidyverse
+
+```{r, echo = FALSE}
+pkgs <- sort(c("haven", "stringr", "forcats", "readr"))
+
+imgs <- paste0(
+  "<a href='http://", pkgs, ".tidyverse.org'>",
+  "<img src='https://github.com/tidyverse/", pkgs, "/raw/master/logo.png'",
+  " width='120' height='139' /></a>"
+)
+
+div <- paste0("<div>", paste(imgs, collapse = ""), "</div>")
+knitr::asis_output(div)
+```
+
+The tidyverse is a collection of R packages that share common philosophies and are designed to work together. This site is a work-in-progress guide to the tidyverse and its packages.
+
+If you are new to the tidyverse, the best place to learn the complete philsophy and how everything fits together is the [R for data science](http://r4ds.had.co.nz/) book. This book is available for free online, and can you order a physical copy from [Amazon](http://amzn.to/2aHLAQ1) (currently taking pre-orders, the book should be out by the end of the year).
+
+## Installation
+
+Install the complete tidyverse with a single line of code:
+
+```{r, eval = FALSE}
+install.packages("tidyverse")
+```
+
+Load the __core__ tidyverse packages: ggplot2, tibble, tidyr, [readr](http://readr.tidyverse.org), purrr, and dplyr. These are the packages you are likely to use in almost every analyis.
+
+```{r}
+library(tidyverse)
+```
+

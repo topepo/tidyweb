@@ -1,21 +1,36 @@
-# the tidyverse
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+the tidyverse
+=============
 
-<div style="font-size:0">
-<a href="http://haven.tidyverse.org"><img src="https://github.com/tidyverse/haven/raw/master/logo.png" width="120" height="139" /></a>
-<a href="http://stringr.tidyverse.org"><img src="https://github.com/tidyverse/stringr/raw/master/logo.png" width="120" height="139" /></a>
-<a href="http://readr.tidyverse.org"><img src="https://github.com/tidyverse/readr/raw/master/logo.png" width="120" height="139" /></a>
-<a href="http://forcats.tidyverse.org"><img src="https://github.com/tidyverse/forcats/raw/master/logo.png" width="120" height="139" /></a>
-</div>
+<a href='http://forcats.tidyverse.org'><img src='https://github.com/tidyverse/forcats/raw/master/logo.png' width='120' height='139' /></a><a href='http://haven.tidyverse.org'><img src='https://github.com/tidyverse/haven/raw/master/logo.png' width='120' height='139' /></a><a href='http://readr.tidyverse.org'><img src='https://github.com/tidyverse/readr/raw/master/logo.png' width='120' height='139' /></a><a href='http://stringr.tidyverse.org'><img src='https://github.com/tidyverse/stringr/raw/master/logo.png' width='120' height='139' /></a>
 
 The tidyverse is a collection of R packages that share common philosophies and are designed to work together. This site is a work-in-progress guide to the tidyverse and its packages.
 
 If you are new to the tidyverse, the best place to learn the complete philsophy and how everything fits together is the [R for data science](http://r4ds.had.co.nz/) book. This book is available for free online, and can you order a physical copy from [Amazon](http://amzn.to/2aHLAQ1) (currently taking pre-orders, the book should be out by the end of the year).
 
-## Installation
+Installation
+------------
 
 Install the complete tidyverse with a single line of code:
 
-```R
+``` r
 install.packages("tidyverse")
+```
+
+Load the **core** tidyverse packages: ggplot2, tibble, tidyr, [readr](http://readr.tidyverse.org), purrr, and dplyr. These are the packages you are likely to use in almost every analyis.
+
+``` r
+library(tidyverse)
+#> Loading tidyverse: ggplot2
+#> Loading tidyverse: tibble
+#> Loading tidyverse: tidyr
+#> Loading tidyverse: readr
+#> Loading tidyverse: purrr
+#> Loading tidyverse: dplyr
+#> Conflicts with tidy packages ----------------------------------------------
+#> filter():  dplyr, stats
+#> is_null(): purrr, testthat
+#> lag():     dplyr, stats
+#> matches(): dplyr, testthat
 ```
