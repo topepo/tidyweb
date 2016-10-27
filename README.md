@@ -1,6 +1,7 @@
 # the tidyverse
 
-<div>
+
+<div style="font-size:0">
 <a href="http://haven.tidyverse.org"><img src="https://github.com/tidyverse/haven/raw/master/logo.png" width="120" height="139" /></a>
 <a href="http://stringr.tidyverse.org"><img src="https://github.com/tidyverse/stringr/raw/master/logo.png" width="120" height="139" /></a>
 <a href="http://readr.tidyverse.org"><img src="https://github.com/tidyverse/readr/raw/master/logo.png" width="120" height="139" /></a>
