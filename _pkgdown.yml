@@ -1,0 +1,9 @@
+home:
+  strip_header: true
+  sidebar: false
+
+navbar:
+  title: tidyverse
+  type: default
+  left: []
+  right: []
