@@ -33,12 +33,12 @@ body {
 ## Components
 
 ```{r, echo = FALSE}
-pkgs <- sort(c("haven", "stringr", "forcats", "readr"))
+pkgs <- sort(c("haven", "stringr", "forcats", "readr", "ggplot2"))
+home <- paste0("http://", pkgs, ".tidyverse.org")
 
 imgs <- paste0(
-  "<a href='http://", pkgs, ".tidyverse.org'>",
-  "<img src='https://github.com/tidyverse/", pkgs, "/raw/master/logo.png'",
-  " width='120' height='139' /></a>"
+  "<a href='", home, "'>",
+  "<img src='", home, "/logo.png' width='120' height='139' /></a>"
 )
 
 div <- paste0("<div>", paste(imgs, collapse = ""), "</div>")

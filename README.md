@@ -21,7 +21,7 @@ The tidyverse
 Components
 ----------
 
-<a href='http://forcats.tidyverse.org'><img src='https://github.com/tidyverse/forcats/raw/master/logo.png' width='120' height='139' /></a><a href='http://haven.tidyverse.org'><img src='https://github.com/tidyverse/haven/raw/master/logo.png' width='120' height='139' /></a><a href='http://readr.tidyverse.org'><img src='https://github.com/tidyverse/readr/raw/master/logo.png' width='120' height='139' /></a><a href='http://stringr.tidyverse.org'><img src='https://github.com/tidyverse/stringr/raw/master/logo.png' width='120' height='139' /></a>
+<a href='http://forcats.tidyverse.org'><img src='http://forcats.tidyverse.org/logo.png' width='120' height='139' /></a><a href='http://ggplot2.tidyverse.org'><img src='http://ggplot2.tidyverse.org/logo.png' width='120' height='139' /></a><a href='http://haven.tidyverse.org'><img src='http://haven.tidyverse.org/logo.png' width='120' height='139' /></a><a href='http://readr.tidyverse.org'><img src='http://readr.tidyverse.org/logo.png' width='120' height='139' /></a><a href='http://stringr.tidyverse.org'><img src='http://stringr.tidyverse.org/logo.png' width='120' height='139' /></a>
 
 The tidyverse is a collection of R packages that share common philosophies and are designed to work together. This site is a work-in-progress guide to the tidyverse and its packages.
 
@@ -40,4 +40,13 @@ Load the **core** tidyverse packages: ggplot2, tibble, tidyr, [readr](http://rea
 
 ``` r
 library(tidyverse)
+#> Loading tidyverse: ggplot2
+#> Loading tidyverse: tibble
+#> Loading tidyverse: tidyr
+#> Loading tidyverse: readr
+#> Loading tidyverse: purrr
+#> Loading tidyverse: dplyr
+#> Conflicts with tidy packages ----------------------------------------------
+#> filter(): dplyr, stats
+#> lag():    dplyr, stats
 ```
