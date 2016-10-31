@@ -47,6 +47,8 @@ library(tidyverse)
 #> Loading tidyverse: purrr
 #> Loading tidyverse: dplyr
 #> Conflicts with tidy packages ----------------------------------------------
-#> filter(): dplyr, stats
-#> lag():    dplyr, stats
+#> filter():  dplyr, stats
+#> is_null(): purrr, testthat
+#> lag():     dplyr, stats
+#> matches(): dplyr, testthat
 ```
