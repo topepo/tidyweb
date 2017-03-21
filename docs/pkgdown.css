@@ -1,5 +1,8 @@
 img.icon {
-  float: right;
+  float: left;
+  margin-left: -35px;
+  width: 30px;
+  height: 30px;
 }
 
 /* Fixes for fixed navbar --------------------------*/
@@ -57,6 +60,10 @@ body {
 .slot {font-style:italic;}
 .symbol {color:black ;}
 .prompt {color:black ;}
+
+pre a {
+  font-weight: bolder;
+}
 
 pre img {
   background-color: #fff;
