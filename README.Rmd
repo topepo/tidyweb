@@ -63,3 +63,6 @@ Load the __core__ tidyverse packages: ggplot2, tibble, tidyr, [readr](http://rea
 library(tidyverse)
 ```
 
+## Other resources
+
+* [Tidyverse style guide](http://style.tidyverse.org)

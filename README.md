@@ -50,3 +50,8 @@ library(tidyverse)
 #> filter(): dplyr, stats
 #> lag():    dplyr, stats
 ```
+
+Other resources
+---------------
+
+-   [Tidyverse style guide](http://style.tidyverse.org)
