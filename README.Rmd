@@ -33,7 +33,7 @@ body {
 ## Components
 
 ```{r, echo = FALSE}
-pkgs <- sort(c("haven", "stringr", "forcats", "readr", "ggplot2", "tidyr", "purrr"))
+pkgs <- sort(c("haven", "stringr", "forcats", "readr", "ggplot2", "tidyr", "purrr", "readxl"))
 home <- paste0("http://", pkgs, ".tidyverse.org")
 
 imgs <- paste0(
