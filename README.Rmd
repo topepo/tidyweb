@@ -43,6 +43,7 @@ pkgs <- sort(c(
   "tidyr", 
   "purrr", 
   "readxl",
+  "tidyverse",
   "dplyr")
 )
 home <- paste0("http://", pkgs, ".tidyverse.org")
